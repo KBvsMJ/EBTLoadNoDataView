@@ -15,6 +15,7 @@ typedef NS_ENUM(NSInteger, EBTLoadNoDataViewType)
 };
 
 
+# 在这个函数需要自己设置背景图和文字描述
 - (void)showInView:(UIView *)baseView andLoadNoDataType:(EBTLoadNoDataViewType)noDataType
 {
 switch (noDataType) {
