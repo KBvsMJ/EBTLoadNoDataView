@@ -15,6 +15,10 @@
 typedef NS_ENUM(NSInteger, EBTLoadNoDataViewType)
 {
     EBTLoadNoDataViewNone    //显示图片和文本
+    
+    
+    
+    
 };
 
 @interface EBTLoadNoDataView : UIView

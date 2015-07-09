@@ -15,6 +15,8 @@
 		2D50E8EA1B4EAE5400CED0CB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D50E8E81B4EAE5400CED0CB /* LaunchScreen.xib */; };
 		2D50E8F61B4EAE5400CED0CB /* EBTLoadNoDataViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D50E8F51B4EAE5400CED0CB /* EBTLoadNoDataViewDemoTests.m */; };
 		2D50E9011B4EAE5D00CED0CB /* EBTLoadNoDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D50E9001B4EAE5D00CED0CB /* EBTLoadNoDataView.m */; };
+		2D50E9041B4EB1F200CED0CB /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D50E9031B4EB1F200CED0CB /* SecondViewController.m */; };
+		2D50E9071B4EB20C00CED0CB /* TestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D50E9061B4EB20C00CED0CB /* TestCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,10 @@
 		2D50E8F51B4EAE5400CED0CB /* EBTLoadNoDataViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBTLoadNoDataViewDemoTests.m; sourceTree = "<group>"; };
 		2D50E8FF1B4EAE5D00CED0CB /* EBTLoadNoDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBTLoadNoDataView.h; sourceTree = "<group>"; };
 		2D50E9001B4EAE5D00CED0CB /* EBTLoadNoDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBTLoadNoDataView.m; sourceTree = "<group>"; };
+		2D50E9021B4EB1F200CED0CB /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		2D50E9031B4EB1F200CED0CB /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		2D50E9051B4EB20C00CED0CB /* TestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCell.h; sourceTree = "<group>"; };
+		2D50E9061B4EB20C00CED0CB /* TestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,8 @@
 				2D50E8E61B4EAE5400CED0CB /* Images.xcassets */,
 				2D50E8E81B4EAE5400CED0CB /* LaunchScreen.xib */,
 				2D50E8D91B4EAE5400CED0CB /* Supporting Files */,
+				2D50E9021B4EB1F200CED0CB /* SecondViewController.h */,
+				2D50E9031B4EB1F200CED0CB /* SecondViewController.m */,
 			);
 			path = EBTLoadNoDataViewDemo;
 			sourceTree = "<group>";
@@ -103,6 +111,8 @@
 			children = (
 				2D50E8DA1B4EAE5400CED0CB /* Info.plist */,
 				2D50E8DB1B4EAE5400CED0CB /* main.m */,
+				2D50E9051B4EB20C00CED0CB /* TestCell.h */,
+				2D50E9061B4EB20C00CED0CB /* TestCell.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -224,6 +234,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D50E9041B4EB1F200CED0CB /* SecondViewController.m in Sources */,
+				2D50E9071B4EB20C00CED0CB /* TestCell.m in Sources */,
 				2D50E8E21B4EAE5400CED0CB /* ViewController.m in Sources */,
 				2D50E8DF1B4EAE5400CED0CB /* AppDelegate.m in Sources */,
 				2D50E8DC1B4EAE5400CED0CB /* main.m in Sources */,
@@ -422,6 +434,7 @@
 				2D50E8FB1B4EAE5400CED0CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2D50E8FC1B4EAE5400CED0CB /* Build configuration list for PBXNativeTarget "EBTLoadNoDataViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +443,7 @@
 				2D50E8FE1B4EAE5400CED0CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
