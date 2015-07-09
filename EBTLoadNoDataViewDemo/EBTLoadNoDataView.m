@@ -5,6 +5,11 @@
 //  Created by ebaotong on 15/7/8.
 //  Copyright (c) 2015年 com.csst. All rights reserved.
 //
+#define UIColorFromRGB(rgbValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
 #define kImageSize CGSizeMake(80.0f,70.0f)
 #import "EBTLoadNoDataView.h"
 @interface EBTLoadNoDataView ()
@@ -102,7 +107,7 @@
     switch (noDataType) {
         case EBTLoadNoDataViewNone:
         {
-            imvPhoto.image = [UIImage imageNamed:@"message-65"];
+            imvPhoto.image = [UIImage imageNamed:@"1"];
             lblTitle.text = @"暂无相关记录";
         }
             break;
@@ -125,7 +130,7 @@
     [baseView addConstraints:self_V];
     
 }
-- (void)removeNoDataView
+- (void)removeView
 {
     [UIView animateWithDuration:1.0 animations:^{
         
@@ -133,5 +138,12 @@
     }];
     
 }
-
++ (void)removeNoDataView
+{
+    [[EBTLoadNoDataView shareInstance]removeView];
+}
++ (void)showInView:(UIView *)baseView andLoadNoDataType:(EBTLoadNoDataViewType)noDataType
+{
+    [[EBTLoadNoDataView shareInstance] showInView:baseView andLoadNoDataType:noDataType];
+}
 @end

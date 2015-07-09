@@ -31,11 +31,11 @@ typedef NS_ENUM(NSInteger, EBTLoadNoDataViewType)
  *  @param noDataType 根据该枚举变量来加载显示对应的图片和文本
  *
  */
-- (void)showInView:(UIView *)baseView andLoadNoDataType:(EBTLoadNoDataViewType)noDataType;
++ (void)showInView:(UIView *)baseView andLoadNoDataType:(EBTLoadNoDataViewType)noDataType;
 
 /**
  *  @brief  从父视图上移除
  */
-- (void)removeNoDataView;
++ (void)removeNoDataView;
 
 @end
